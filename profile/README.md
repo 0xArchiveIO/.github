@@ -20,7 +20,6 @@ Hyperliquid includes core perps, HIP-3 builder perps, HIP-4 outcome markets, and
 | Use an SDK in Rust | [sdk-rust](https://github.com/0xArchiveIO/sdk-rust) | `cargo add oxarchive` |
 | Use the terminal, CI, cron, Claude Code, or ChatGPT Codex shells | [0xarchive-cli](https://github.com/0xArchiveIO/0xarchive-cli) | `npm install @0xarchive/cli` |
 | Use MCP tools via OAuth (no install) | [Hosted MCP](https://mcp.0xarchive.io) | Connect via `mcp.0xarchive.io` |
-| Self-host MCP for stdio or air-gapped clients | [0xarchive-mcp](https://github.com/0xArchiveIO/0xarchive-mcp) | `npm install @0xarchive/mcp-server` |
 | Use a local skill package in Claude Code, ChatGPT Codex with skills enabled, or another skill-capable coding agent | [0xarchive-skill](https://github.com/0xArchiveIO/0xarchive-skill) | Copy into `.claude/skills/0xarchive` or `.agents/skills/0xarchive`. Optional OpenClaw helper: `openclaw install 0xarchive` |
 | Inspect working notebooks before wiring a client | [examples](https://github.com/0xArchiveIO/examples) | Run the liquidation, funding, or HIP-3 notebook |
 
