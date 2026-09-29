@@ -12,7 +12,7 @@ For REST, SDKs, or CLI:
 
 1. Create an account: [0xArchive signup](https://www.0xarchive.io/signup).
 2. Copy an API key.
-3. Run the [Quick Start](https://www.0xarchive.io/docs/quick-start).
+3. Run the [Quick Start](https://docs.0xarchive.io/quickstart).
 4. Choose the repo that matches the job.
 
 ## Choose A Repo
@@ -29,10 +29,10 @@ For REST, SDKs, or CLI:
 
 ## Public Surfaces
 
-- First request: [Quick Start](https://www.0xarchive.io/docs/quick-start)
-- SDKs: [SDK docs](https://www.0xarchive.io/docs/sdks)
-- CLI: [CLI docs](https://www.0xarchive.io/docs/cli)
-- Agents: [AI Clients](https://www.0xarchive.io/docs/ai-clients)
+- First request: [Quick Start](https://docs.0xarchive.io/quickstart)
+- SDKs: [SDK docs](https://docs.0xarchive.io/sdks)
+- CLI: [CLI docs](https://docs.0xarchive.io/cli)
+- Agents: [AI Clients](https://docs.0xarchive.io/ai-clients)
 - File exports: [Data Catalog](https://www.0xarchive.io/data)
 - Plans and limits: [Pricing](https://www.0xarchive.io/pricing)
 - Status and changes: [Status](https://www.0xarchive.io/status), [Changelog](https://www.0xarchive.io/changelog)
