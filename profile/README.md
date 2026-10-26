@@ -1,55 +1,45 @@
-# 0xArchive
+<div align="center">
 
-Granular market data infrastructure for Hyperliquid and Lighter.xyz.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0xArchiveIO/.github/HEAD/profile/assets/hero-dark.png">
+  <img alt="0xArchive: every fill, every wallet, Hyperliquid and Lighter. One 1-minute BTC candle opened up into the 2,913 fills inside it." src="https://raw.githubusercontent.com/0xArchiveIO/.github/HEAD/profile/assets/hero-light.png" width="800">
+</picture>
 
-Hyperliquid includes core perps, HIP-3 builder perps, HIP-4 outcome markets, and Hyperliquid Spot. Lighter.xyz is the second top-level venue API. 0xArchive gives developers, analysts, Claude Code users, ChatGPT Codex users, and agent builders one API surface for live and historical order books, trades, candles, funding, open interest, liquidations, replay, data-quality checks, SDKs, CLI, MCP, skills, and file exports.
+[Website](https://www.0xarchive.io) · [Docs](https://docs.0xarchive.io) · [Quick start](https://docs.0xarchive.io/quickstart) · [Data Catalog](https://www.0xarchive.io/data) · [Pricing](https://www.0xarchive.io/pricing) · [Status](https://www.0xarchive.io/status)
 
-## Start With One Request
+</div>
 
-For MCP, [connect to the hosted server](https://github.com/0xArchiveIO/0xarchive-mcp) through your client's OAuth flow. No 0xArchive API key or local server installation is required.
+Granular market data infrastructure for Hyperliquid and Lighter: live and historical order books down to the single order, every fill, funding, open interest, liquidations and every wallet's positions, through one API.
 
-For REST, SDKs, or CLI:
+<sub>The chart: BTC on Hyperliquid, 2026-10-26 01:44 UTC. A candle shows one bar for that minute; trade history returns 2,913 fills from 1,211 wallets.</sub>
 
-1. Create an account: [0xArchive signup](https://www.0xarchive.io/signup).
-2. Copy an API key.
-3. Run the [Quick Start](https://docs.0xarchive.io/quickstart).
-4. Choose the repo that matches the job.
+## Pick your route
 
-## Choose A Repo
-
-| Job | Repo | First path |
+| You want to | Repo | Start with |
 | --- | --- | --- |
-| Use an SDK in Python | [sdk-python](https://github.com/0xArchiveIO/sdk-python) | `pip install oxarchive` |
-| Use an SDK in TypeScript | [sdk-typescript](https://github.com/0xArchiveIO/sdk-typescript) | `npm install @0xarchive/sdk` |
-| Use an SDK in Rust | [sdk-rust](https://github.com/0xArchiveIO/sdk-rust) | `cargo add oxarchive` |
-| Use the terminal, CI, cron, Claude Code, or ChatGPT Codex shells | [0xarchive-cli](https://github.com/0xArchiveIO/0xarchive-cli) | `npm install @0xarchive/cli` |
-| Use MCP tools via OAuth (no install) | [0xarchive-mcp](https://github.com/0xArchiveIO/0xarchive-mcp) | Connect to `https://mcp.0xarchive.io/mcp` |
-| Use a local skill package in Claude Code, ChatGPT Codex with skills enabled, or another skill-capable coding agent | [0xarchive-skill](https://github.com/0xArchiveIO/0xarchive-skill) | Copy into `.claude/skills/0xarchive` or `.agents/skills/0xarchive`. Optional OpenClaw helper: `openclaw install 0xarchive` |
-| Inspect working notebooks before wiring a client | [examples](https://github.com/0xArchiveIO/examples) | Run the liquidation, funding, or HIP-3 notebook |
+| Ask an agent, nothing to install | [0xarchive-mcp](https://github.com/0xArchiveIO/0xarchive-mcp) | Connect `https://mcp.0xarchive.io/mcp` and sign in with OAuth |
+| Research and backtest with a coding agent | [0xarchive-quant](https://github.com/0xArchiveIO/0xarchive-quant) | `claude plugin marketplace add 0xArchiveIO/0xarchive-quant` |
+| Work in Python | [sdk-python](https://github.com/0xArchiveIO/sdk-python) | `pip install oxarchive` |
+| Work in TypeScript | [sdk-typescript](https://github.com/0xArchiveIO/sdk-typescript) | `npm install @0xarchive/sdk` |
+| Work in Rust | [sdk-rust](https://github.com/0xArchiveIO/sdk-rust) | `cargo add oxarchive` |
+| Script it, or run it in CI or cron | [0xarchive-cli](https://github.com/0xArchiveIO/0xarchive-cli) | `npx @0xarchive/cli auth test` |
+| See working analysis first | [examples](https://github.com/0xArchiveIO/examples) | Run the liquidation, funding, HIP-3 or live-stream notebook |
 
-## Public Surfaces
+Every route but MCP takes an API key: [create a free account](https://www.0xarchive.io/signup), copy a key, and run the [Quick start](https://docs.0xarchive.io/quickstart). Free keys read the most recent 30 days.
 
-- First request: [Quick Start](https://docs.0xarchive.io/quickstart)
-- SDKs: [SDK docs](https://docs.0xarchive.io/sdks)
-- CLI: [CLI docs](https://docs.0xarchive.io/cli)
-- Agents: [AI Clients](https://docs.0xarchive.io/ai-clients)
-- File exports: [Data Catalog](https://www.0xarchive.io/data)
-- Plans and limits: [Pricing](https://www.0xarchive.io/pricing)
-- Status and changes: [Status](https://www.0xarchive.io/status), [Changelog](https://www.0xarchive.io/changelog)
-- Machine-readable context: [llms.txt](https://www.0xarchive.io/llms.txt), [OpenAPI](https://www.0xarchive.io/openapi.json)
+## Venues
 
-## Agent Safety
+| Venue | API prefix |
+| --- | --- |
+| Hyperliquid core perps | `/v1/hyperliquid` |
+| Hyperliquid HIP-3 builder perps | `/v1/hyperliquid/hip3` |
+| Hyperliquid HIP-4 outcome markets | `/v1/hyperliquid/hip4` |
+| Hyperliquid Spot | `/v1/hyperliquid/spot` |
+| Lighter mainnet | `/v1/lighter` |
+| Lighter on Robinhood Chain | `/v1/rh-lighter` |
 
-Start local. Give agents the narrowest key and tool scope that can answer the first question. Treat MCP servers, shell commands, and skills as real code with real access. Claude Code and ChatGPT Codex should use the same 0xArchive product truth: one authenticated request first, then expand into SDKs, CLI, MCP, skills, replay, or Data Catalog exports after the result is concrete.
+For large offline studies, the [Data Catalog](https://www.0xarchive.io/data) quotes and exports zstd-compressed Parquet. Agents can read [llms.txt](https://www.0xarchive.io/llms.txt) and the [OpenAPI spec](https://www.0xarchive.io/openapi.json).
 
-## Venue Model
+## Agent safety
 
-- Hyperliquid: `/v1/hyperliquid/*`
-- Hyperliquid HIP-3: `/v1/hyperliquid/hip3/*`
-- Hyperliquid HIP-4: `/v1/hyperliquid/hip4/*`
-- Hyperliquid Spot: `/v1/hyperliquid/spot/*`
-- Lighter.xyz: `/v1/lighter/*`
-
-HIP-3, HIP-4, and Spot are Hyperliquid-scoped market families, not peer top-level venues beside Hyperliquid and Lighter.xyz.
-
-For large offline studies, use the Data Catalog to quote and export zstd-compressed Parquet. For production systems, use REST, WebSocket, SDKs, CLI, or MCP.
+Give an agent the narrowest key and tool scope that answers its first question. MCP servers, shell commands and skills are real code with real access: start with one read, then widen.
