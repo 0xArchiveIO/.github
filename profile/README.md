@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0xArchiveIO/.github/HEAD/profile/assets/hero-dark.png">
-  <img alt="0xArchive: every fill, every wallet, Hyperliquid and Lighter. One 1-minute BTC candle opened up into the 2,913 fills inside it." src="https://raw.githubusercontent.com/0xArchiveIO/.github/HEAD/profile/assets/hero-light.png" width="800">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0xArchiveIO/.github/HEAD/profile/assets/hero-dark.svg">
+  <img alt="0xArchive: every fill, every wallet, Hyperliquid and Lighter. One 1-minute BTC candle opened up into the 2,913 fills inside it." src="https://raw.githubusercontent.com/0xArchiveIO/.github/HEAD/profile/assets/hero-light.svg" width="800">
 </picture>
 
 [Website](https://www.0xarchive.io) · [Docs](https://docs.0xarchive.io) · [Quick start](https://docs.0xarchive.io/quickstart) · [Data Catalog](https://www.0xarchive.io/data) · [Pricing](https://www.0xarchive.io/pricing) · [Status](https://www.0xarchive.io/status)
