@@ -11,8 +11,6 @@
 
 Granular market data infrastructure for Hyperliquid and Lighter: live and historical order books down to the single order, every fill, funding, open interest, liquidations and every wallet's positions, through one API.
 
-<sub>The chart: BTC on Hyperliquid, 2026-10-26 01:44 UTC. A candle shows one bar for that minute; trade history returns 2,913 fills from 1,211 wallets.</sub>
-
 ## Pick your route
 
 | You want to | Repo | Start with |
